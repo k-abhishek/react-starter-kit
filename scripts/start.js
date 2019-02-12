@@ -27,9 +27,9 @@ const {
   prepareUrls,
 } = require('react-dev-utils/WebpackDevServerUtils');
 const openBrowser = require('react-dev-utils/openBrowser');
-const paths = require('../config/paths');
-const config = require('../config/webpack.config');
-const createDevServerConfig = require('../config/webpackServer.config');
+const paths = require('../webpack_config/paths');
+const config = require('../webpack_config/webpack.config');
+const createDevServerConfig = require('../webpack_config/webpackServer.config');
 
 const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
