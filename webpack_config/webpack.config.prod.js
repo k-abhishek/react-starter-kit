@@ -145,7 +145,7 @@ module.exports = {
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
-            include: [ paths.nferxCore, paths.appSrc ],
+            include: [ paths.appSrc ],
             loader: require.resolve('babel-loader'),
             options: {
               compact: true,
